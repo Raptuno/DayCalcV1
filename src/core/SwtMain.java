@@ -182,6 +182,9 @@ public class SwtMain {
 		btnCalcularDas.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
+				d=java.util.Calendar.getInstance().getTime();
+				System.out.println(d.getDate());
+				
 				txtRes.setText(getDateTime().toString());
 			}
 		});
